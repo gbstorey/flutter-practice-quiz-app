@@ -1,3 +1,4 @@
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
 // const == compile-time known variable. use 'final' for dynamic values.
@@ -28,10 +29,13 @@ class StartScreen extends StatelessWidget {
 
       Container(
           padding: const EdgeInsets.only(top: 80, bottom: 40),
-          child: const Text(
+          child: Text(
             "Learn Flutter the fun way!",
-            style: TextStyle(
-                fontSize: 28, fontWeight: FontWeight.w500, color: Colors.white),
+            style: GoogleFonts.lato(
+              color: const Color.fromARGB(100, 255, 200, 255),
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
           )),
       OutlinedButton.icon(
           onPressed: () {
